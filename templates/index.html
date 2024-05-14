@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("https://images.indianexpress.com/2023/07/Doctor-1.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(151, 177, 37);
+}
+* {box-sizing: border-box;}
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 230px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+}
+
+.form_wrapper {
+  flex:1;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <h1 align="center"><u>DIABETS PREDICTION SYSTEM</u></h1>
+  <h2>Diabetes..</h2>
+  <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;" >Diabetes, is a group of metabolic disorders in which there are high blood sugar levels over a prolonged period. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death. Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes.</p>
+  <br>
+  <h3>Causes of Diabetes</h3>
+  <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><strong>pathogenesis in which metabolic, behavioral, lifestyle and environmental factors precipitate disease in genetically predisposed persons
+    The combination of insulin resistance increased hepatic gluconeogenesis, and relative defects in insulin secretion promote metabolic dysfunction.
+    Overweight or obese body habitus is a significant factor contributing to insulin resistance, which is a precursor to glucose intolerance and diabetes development.
+    A hypercaloric diet and sedentary lifestyle also worsen insulin resistance
+    Hyperglycemia develops when progressive impairments in insulin secretion render pancreatic β-cells unable to maintain euglycemia
+    Vital hereditary component contributes to the manifestation of the disease, with complex polygenic inheritance pattern underlying most cases</strong> </p>
+    <h3>Dataset Source</h3>
+  <p>This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.</p>
+  <h4>Dataset Attributes</h4>
+   <ul>
+    <li>Pregnancies: Number of times pregnant</li>
+    <li>Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test</li>
+    <li>BloodPressure: Diastolic blood pressure (mm Hg)</li>
+    <li>SalivaryAmylase: Saliva Content in tongue(U/L)</li>
+    <li>Insulin: 2-Hour serum insulin (mu U/ml)</li>
+    <li>BMI: Body mass index (weight in kg/(height in m)^2)</li>
+    <li>DiabetesPedigreeFunction: Diabetes pedigree function</li>
+    <li>Age: Age (years)</li>
+    <li>Outcome: Class variable (0 or 1)</li>
+  </ul>
+   <h3 align="center">Test your Diabetes below!</h3>
+  <div class="container">
+  <form action="/send", name="send_data", method="post">
+
+    <label>Pregnancies</label>
+    <input type="text" name="Pregnancies" placeholder="Your Pregnancy Count..">
+
+    <label>Glucose</label>
+    <input type="text" name="Glucose" placeholder="Your Glucose Levels..">
+
+    <label>BloodPressure</label>
+    <input type="text"  name="BloodPressure" placeholder="Your BloodPressure Count..">
+
+    <label>Salivary Amylase</label>
+    <input type="text" name="SalivaryAmylase" placeholder="Your Salivary Amylase Count..">
+
+    <label>Insulin</label>
+    <input type="text" name="Insulin" placeholder="Your Insulin levels..">
+
+    <label>BMI</label>
+    <input type="text" name="BMI" placeholder="BMI..">
+
+    <label>DiabetesPedigreeFunction</label>
+    <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction...">
+
+    <label>Age</label>
+    <input type="text" name="Age" placeholder="Your Age..">
+
+
+    <div class="form_wrapper">
+       <input type="submit" value="Submit"/>
+    </div>
+
+  </form>
+
+
+</div>
+</body>
+</html>
